@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" href="style.css">
+<script src="calculator.js"></script>
+
+
+</head>
+<body>
+
+<div class="bg-container">
+  <div class="container">
+    <div class="value-display"><h1 id="displayCalculate"></h1></div>
+    <div class="button-values">
+    <div>
+        <button class="button" onclick="clearData()">C</button>
+        <button class="button" onclick="numberValue('.')">.</button>
+        <button class="button" onclick="numberValue('%')">%</button>
+        <button class="button" onclick="numberValue('/')">/</button>
+    </div>
+    <div >
+        <button class="button" onclick="numberValue('7')">7</button>
+        <button class="button" onclick="numberValue('8')">8</button>
+        <button class="button" onclick="numberValue('9')">9</button>
+        <button class="button" onclick="numberValue('*')">*</button>
+    </div>
+    <div >
+        <button class="button" onclick="numberValue('4')">4</button>
+        <button class="button" onclick="numberValue('5')">5</button>
+        <button class="button" onclick="numberValue('6')">6</button>
+        <button class="button" onclick="numberValue('-')">-</button>
+    </div>
+    <div >
+        <button class="button" onclick="numberValue('1')">1</button>
+        <button class="button" onclick="numberValue('2')">2</button>
+        <button class="button" onclick="numberValue('3')">3</button>
+        <button class="button" onclick="numberValue('+')">+</button>
+    </div>
+    <div>
+        <button class="button-last" onclick="numberValue('0')">0</button>
+        <button class="button-last" onclick="calculateTotal()">=</button>
+    </div>
+</div>
+  </div>
+</div>
+
+</body>
+</html>
